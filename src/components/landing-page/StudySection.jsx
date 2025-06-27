@@ -34,7 +34,7 @@ const StudySection = () => {
           background:
             "linear-gradient(180deg, #007AFF 0%, rgba(153, 153, 153, 0) 100%)",
         }}
-        className="max-w-[1440px]  w-[80%] max-h-[631px] mx-auto mt-[116.73px] rounded-[30px] flex items-end justify-between gap-8 px-8 pt-[95px] pb-[60px] max-[1300px]:w-[90%] max-[1131px]:px-0 max-[1131px]:scale-75   max-[1131px]:w-full max-[1020px]:flex-col  max-[1020px]:scale-100  max-[1020px]:w-[90%]   max-[800px]:w-full max-[800px]:rounded-none  "
+        className="max-w-[1440px]  w-[80%] min-[1020px]:max-h-[631px] mx-auto mt-[116.73px] rounded-[30px] flex items-end justify-between gap-8 px-8 pt-[95px] pb-[60px] max-[1300px]:w-[90%] max-[1131px]:px-0 max-[1131px]:scale-75   max-[1131px]:w-full max-[1020px]:flex-col  max-[1020px]:scale-100  max-[1020px]:w-[90%]   max-[800px]:w-full max-[800px]:rounded-none  "
       >
         <AceCard
           title="CFA Level III Essentials"
