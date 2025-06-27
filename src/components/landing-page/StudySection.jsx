@@ -54,7 +54,7 @@ const StudySection = () => {
           height="476px"
           hoverHeight="496px"
           backgroundImage={bg2.src}
-          className={"max-[404px]:scale-75 max-[404px]:-mt-20"}
+          className={"max-[404px]:scale-75 "}
         />
         <AceCard
           title="GRE Physics"
@@ -64,7 +64,7 @@ const StudySection = () => {
           height="424px"
           hoverHeight="444px"
           backgroundImage={bg3.src}
-          className={"max-[404px]:scale-75 max-[404px]:-mt-20"}
+          className={"max-[404px]:scale-75 "}
         />
       </div>
       <div className="mt-[91.27px] bg-[#000025] py-[60px] px-5 flex flex-col items-center gap-6">
