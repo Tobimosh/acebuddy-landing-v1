@@ -1,13 +1,25 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Slab, Montserrat, Petrona } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoSlab = Roboto_Slab({
+  variable: "--font-roboto-slab",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+const petrona = Petrona({
+  variable: "--font-petrona",
   subsets: ["latin"],
 });
 
@@ -18,11 +30,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${robotoSlab.variable} ${montserrat.variable} ${petrona.variable} antialiased bg-black`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
