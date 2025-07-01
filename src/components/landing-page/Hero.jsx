@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
           <div className="flex flex-col items-center gap-6">
             <h1
-              className="font-montserrat text-[80px] leading-normal text-center max-w-[960px] font-medium max-[915px]:text-5xl max-[915px]:max-w-[90%]"
+              className="font-montserrat text-[80px] leading-normal text-center max-w-[960px] font-medium max-[915px]:text-4xl max-[915px]:max-w-[90%]"
               style={{
                 background:
                   "linear-gradient(145.55deg, #ECECEC 20.35%, rgba(236, 236, 236, 0) 128.73%)",

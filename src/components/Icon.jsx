@@ -309,70 +309,95 @@ export const Icon = {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <circle
-        cx="116.933"
-        cy="217.202"
-        r="75"
-        transform="rotate(12.9839 116.933 217.202)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="173.354"
-        cy="251.623"
-        r="75"
-        transform="rotate(-32.0162 173.354 251.623)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="230.933"
-        cy="219.201"
-        r="75"
-        transform="rotate(-77.0161 230.933 219.201)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="253.354"
-        cy="175.915"
-        r="75"
-        transform="rotate(-122.016 253.354 175.915)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="220.933"
-        cy="115.203"
-        r="75"
-        transform="rotate(-167.016 220.933 115.203)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="173.646"
-        cy="103.624"
-        r="75"
-        transform="rotate(147.984 173.646 103.624)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="116.933"
-        cy="127.202"
-        r="75"
-        transform="rotate(102.984 116.933 127.202)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
-      <circle
-        cx="103.354"
-        cy="175.623"
-        r="75"
-        transform="rotate(57.9839 103.354 175.623)"
-        fill="#00008B"
-        fill-opacity="0.5"
-      />
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 178.5 177.5; -180 178.5 177.5; 0 178.5 177.5"
+          dur="10s"
+          repeatCount="indefinite"
+        />
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="116.933 217.202; 178.5 177.5; 116.933 217.202"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="173.354 251.623; 178.5 177.5; 173.354 251.623"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="230.933 219.201; 178.5 177.5; 230.933 219.201"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="253.354 175.915; 178.5 177.5; 253.354 175.915"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="220.933 115.203; 178.5 177.5; 220.933 115.203"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="173.646 103.624; 178.5 177.5; 173.646 103.624"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="116.933 127.202; 178.5 177.5; 116.933 127.202"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="75" fill="#00008B" fillOpacity="0.5">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="103.354 175.623; 178.5 177.5; 103.354 175.623"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+      </g>
     </svg>
   ),
   Sparkle: (props) => (

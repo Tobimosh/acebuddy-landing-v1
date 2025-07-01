@@ -1,12 +1,21 @@
+"use client";
 import React from "react";
 import { Icon } from "../Icon";
 import Link from "next/link";
 import banner from "@/../public/assets/features-banner.png";
+import banner2 from "@/../public/assets/features-banner2.png";
+import banner3 from "@/../public/assets/features-banner3.png";
+import banner4 from "@/../public/assets/features-banner4.png";
 import Image from "next/image";
 
 const Features = () => {
+  const banners = [banner, banner2, banner3, banner4];
+
   return (
-    <section className="pt-[114px] max-w-[1440px]  pb-[53.08px] flex flex-col gap-[178px] max-[790px]:gap-16 w-[80%] mx-auto max-[915px]:w-full max-[915px]:px-10 max-[600px]:px-[18px] overflow-x-hidden">
+    <section
+      id="features"
+      className="pt-[114px] max-w-[1440px]  pb-[53.08px] flex flex-col gap-[178px] max-[790px]:gap-16 w-[80%] mx-auto max-[915px]:w-full max-[915px]:px-10 max-[600px]:px-[18px] overflow-x-hidden"
+    >
       <div className="flex flex-col items-center gap-[34px] text-center">
         <h3 className="font-roboto text-[62px] leading-normal text-[#ECECEC] font-medium max-[915px]:text-4xl">
           Smarter Features. Faster Mastery.
@@ -18,15 +27,7 @@ const Features = () => {
       </div>
       <div className="flex flex-col gap-[82.29px]">
         <div className="flex items-center justify-between max-[790px]:flex-col">
-          <div
-            className="spinner"
-            style={{
-              animation: "rotate 9s linear infinite",
-              animationPlayState: "running",
-            }}
-          >
-            <Icon.BlueCircles />
-          </div>
+          <Icon.BlueCircles className={"max-[800px]:scale-75"} />
 
           <div className="flex flex-col gap-[24.27px] max-w-[453px] max-[790px]:max-w-full max-[790px]:items-center">
             <div className="flex flex-col gap-[3.73px] max-[790px]:items-center">
@@ -67,13 +68,50 @@ const Features = () => {
               <Icon.ArrowRight />
             </Link>
           </div>
-          <Image
+          <div className="relative w-full overflow-hidden">
+            <div className="flex animate-scroll max-[790px]:max-h-[347px] max-[486px]:*:object-contain">
+              {/* Original banners */}
+              {banners.map((img, index) => (
+                <Image
+                  key={`original-${index}`}
+                  src={img}
+                  alt={`Features Banner ${index + 1}`}
+                  className="max-w-[583px] max-[1124px]:max-w-[450px] max-[486px]:max-w-full"
+                />
+              ))}
+              {/* Duplicated banners for seamless looping */}
+              {banners.map((img, index) => (
+                <Image
+                  key={`duplicate-${index}`}
+                  src={img}
+                  alt={`Features Banner ${index + 1}`}
+                  className="max-w-[583px] max-[1124px]:max-w-[450px] max-[486px]:max-w-full"
+                />
+              ))}
+            </div>
+          </div>
+          {/* <Image
             src={banner}
             alt="Features Banner"
             className="max-w-[583px] max-[1124px]:max-w-[450px] max-[486px]:max-w-full"
-          />
+          /> */}
         </div>
       </div>
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          animation: scroll 20s linear infinite;
+          display: flex;
+          width: max-content;
+        }
+      `}</style>
     </section>
   );
 };

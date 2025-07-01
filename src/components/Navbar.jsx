@@ -1,11 +1,49 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Icon } from "./Icon";
 import Link from "next/link";
 import MenuIcon from "./MenuIcon/MenuIcon";
+import { usePathname, useRouter } from "next/navigation";
 
-const Navbar = () => {
+const Navbar = ({ scrollToJoinWaitlist }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Calculate offset for fixed navbar (adjust height as needed)
+      const navbarHeight = 72; // Replace with your navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleSectionClick = (sectionId) => {
+    if (pathname === "/") {
+      // Already on homepage, just scroll
+      scrollToSection(sectionId);
+    } else {
+      // Navigate to homepage with section hash
+      router.push(`/#${sectionId}`);
+    }
+  };
+
+  // Handle scrolling when arriving at homepage with hash
+  useEffect(() => {
+    if (pathname === "/" && window.location.hash) {
+      const sectionId = window.location.hash.substring(1);
+      // Small delay to ensure page is fully loaded
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    }
+  }, [pathname]);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,9 +56,12 @@ const Navbar = () => {
       <div className="flex items-center gap-8 max-[807px]:hidden">
         <ul className="flex items-center gap-8 font-inter text-[#ECECEC] text-base font-normal ">
           <li>
-            <Link className="p-3" href={"/"}>
+            <button
+              className="p-3 cursor-pointer"
+              onClick={() => handleSectionClick("features")}
+            >
               Features
-            </Link>
+            </button>
           </li>
           <li>
             <Link className="p-3" href={"/careers"}>
@@ -37,7 +78,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="text-base font-medium text-[#ECECEC] bg-transparent px-5 py-2 border border-[#ECECEC] rounded-[50px] hover:bg-[#1A1629] transition-colors duration-300"
-            href={"/"}
+            href={"https://vimeo.com/1097645084/fb9ff61017?share=copy"}
           >
             Watch Demo
           </Link>
@@ -67,10 +108,10 @@ const Navbar = () => {
           <li>
             <Link
               className="block py-2 hover:text-[#000075] transition-colors"
-              href={"/"}
+              href={"/faqs"}
               onClick={handleMenuToggle}
             >
-              Features
+              Faqs
             </Link>
           </li>
           <li>
@@ -102,7 +143,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="block w-full text-center text-[#ECECEC] border border-[#ECECEC] px-5 py-3 rounded-[50px] hover:bg-[rgba(0,0,117,0.1)] transition-colors"
-              href={"/"}
+              href={"https://vimeo.com/1097645084/fb9ff61017?share=copy"}
               onClick={handleMenuToggle}
             >
               Watch Demo
