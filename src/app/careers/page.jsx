@@ -115,53 +115,23 @@ const CareersPage = () => {
         {/* Mission section */}
         <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <div className="bg-[rgba(0,0,117,0.05)] border border-[rgba(236,236,236,0.1)] rounded-2xl p-8 max-[768px]:p-6">
-            <h2 className="font-montserrat text-2xl font-semibold text-[#ECECEC] mb-6 max-[768px]:text-xl">
-              Why Join AceBuddy?
+            <h2 className="font-montserrat text-center text-2xl font-semibold text-[#ECECEC] mb-6 max-[768px]:text-xl">
+              We're radically shaping the future of exam prep
             </h2>
             <div className="space-y-4 font-inter text-[#909DAC] leading-relaxed max-[768px]:text-sm">
               <p>
-                We are a{" "}
-                <strong className="text-[#ECECEC]">lean, global team</strong> of
-                learners, dreamers, and builders, courageous enough to address
-                old challenges with new and more efficient tools and we're on a
-                mission to{" "}
-                <strong className="text-[#ECECEC]">
-                  transform high-stakes exam prep
-                </strong>{" "}
-                into a smoother and more adaptive experience.
-              </p>
-              <p>
-                Our culture values{" "}
-                <strong className="text-[#ECECEC]">
-                  collaboration, innovation, and authenticity
-                </strong>
-                .
-              </p>
-              <p>
-                We're{" "}
-                <strong className="text-[#ECECEC]">
-                  not just building a product
-                </strong>
-                , we're designing an educational assistant for real people with
-                real pressures.
-              </p>
-              <p>
                 We're looking for mission-driven executors ready to own big
-                challenges and shape a product that actually <em>matters</em>,
-                especially if you've ever experienced the crippling,
-                hand-numbing anxiety of preparing for a high-stakes exam, this
-                is your chance to contribute to a solution that{" "}
-                <strong className="text-[#ECECEC]">
-                  radically solves that problem
-                </strong>
-                .
+                challenges and shape a product that actually matters, especially
+                if you've ever experienced the crippling, hand-numbing anxiety
+                of preparing for a high-stakes exam, this is your opportunity to
+                contribute to a solution that RADICALLY solves that problem.
               </p>
             </div>
           </div>
         </div>
 
         {/* Jobs section */}
-        <div className="mb-16 max-[768px]:mb-12">
+        {/* <div className="mb-16 max-[768px]:mb-12">
           <h2
             className="font-montserrat text-3xl font-medium text-center mb-12 max-[768px]:text-2xl max-[768px]:mb-8"
             style={{
@@ -180,10 +150,10 @@ const CareersPage = () => {
               <JobCard key={index} {...job} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Values section */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        <div className="max-w-4xl mx-auto mb-20 max-[768px]:mb-12">
           <h2 className="font-montserrat text-2xl font-semibold text-[#ECECEC] mb-8 text-center max-[768px]:text-xl max-[768px]:mb-6">
             What We Care About
           </h2>
@@ -230,25 +200,28 @@ const CareersPage = () => {
               </p>
             </div>
           </div>
+          <p className="text-sm text-center mt-6">
+            👉 Follow us on <Link href="https://www.linkedin.com/company/acebuddy" className="text-[#fff] text-center mt-6 hover:underline font-semibold transition-all duration-300">LinkedIn</Link> to see open positions as they’re announced.
+          </p>
         </div>
 
         {/* CTA section */}
         <div className="text-center">
           <h2 className="font-montserrat text-2xl font-semibold text-[#ECECEC] mb-6 max-[768px]:text-xl">
-            Ready to Shape the Future of Exam Prep?
+            No Open Positions for you?{" "}
           </h2>
           <p className="font-inter text-[#909DAC] mb-8 max-[768px]:text-sm">
-            Send us your CV + portfolio or past work samples and let us know why
-            AceBuddy excites you and what role you're applying for.
-          </p>
-          <Link
-            href="mailto:careers@acebuddy.so"
-            className="inline-block font-montserrat border-[1.24px] border-[rgba(255,255,255,0.3)] px-8 py-3 rounded-full text-base font-normal text-[#F2F4F8] bg-transparent hover:bg-[#000075] hover:font-semibold transition-all duration-300"
-          >
-            careers@acebuddy.so
-          </Link>
-          <p className="font-inter text-[#909DAC] text-sm mt-4">
-            We're reviewing on a rolling basis.
+            If you resonate with our mission and think your profile would be a
+            great fit, send an email with your CV + portfolio or past work
+            samples to
+            <Link
+              href="mailto:careers@acebuddy.so"
+              className="inline-block text-white underine font-semibold font-montserrat"
+            >
+              careers@acebuddy.so
+            </Link>{" "}
+            and let us know why AceBuddy excites you and the role you’d love to
+            have.
           </p>
         </div>
       </div>

@@ -24,8 +24,8 @@ const StudySection = () => {
           </span>
         </h3>
         <p className="font-inter text-[20px] leading-normal text-[#909DAC] font-normal max-w-[641px] text-center max-[915px]:text-base">
-          A specialized flashcard model built with{" "}
-          <b>Spaced Retrieval Practice</b>. Never forget key concepts. Learning
+          A specialized flashcard model with built-in{" "}
+          <b>Spaced Retrieval Practice</b> Never forget key concepts. Learning
           retention that last months to years.
         </p>
       </div>
@@ -85,7 +85,8 @@ const StudySection = () => {
           </p>
         </div>
         <Link
-          href={"https://forms.fillout.com/t/9QDQgUUtsSus"}
+          target="_blank"
+          href={"https://app.acebuddy.so/invite-code"}
           className="font-inter text-base text-[#0B081C] font-medium rounded-[60px] py-3 px-6 max-h-12 bg-[#ECECEC] max-[800px]:text-sm"
         >
           Sign Up for BETA

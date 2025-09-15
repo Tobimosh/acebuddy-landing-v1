@@ -2,14 +2,14 @@
 import React from "react";
 import { Icon } from "../Icon";
 import Link from "next/link";
-import banner from "@/../public/assets/features-banner.png";
+import banner1 from "@/../public/assets/features-banner1.png";
 import banner2 from "@/../public/assets/features-banner2.png";
 import banner3 from "@/../public/assets/features-banner3.png";
-import banner4 from "@/../public/assets/features-banner4.png";
+// import banner4 from "@/../public/assets/features-banner4.png";
 import Image from "next/image";
 
 const Features = () => {
-  const banners = [banner, banner2, banner3, banner4];
+  const banners = [banner1, banner2, banner3];
 
   return (
     <section
@@ -38,7 +38,7 @@ const Features = () => {
                 Learn PRECISELY what you need to, at the pace that suits you
                 best. Get tailored, AI-curated, up-to-date{" "}
                 <i className="font-medium">
-                  summaries, video tutorials and textbook references
+                  summaries, video tutorials and comprehensive text
                 </i>{" "}
                 that covers your entire syllabus for free.
               </p>
@@ -56,12 +56,13 @@ const Features = () => {
                 Access Seamless Prep{" "}
               </h6>
               <p className="font-inter text-sm text-[#909DAC] font-normal">
-                Visualize your progress, tackle weak spots, and explore
-                structured content—all in one smart dashboard.
+                Visualize your progress, tackle weak spots, and track your
+                mastery—all in one smart dashboard.
               </p>
             </div>
             <Link
-              href={"https://forms.fillout.com/t/9QDQgUUtsSus"}
+              target="_blank"
+              href={"https://app.acebuddy.so/invite-code"}
               className="border-[0.5px] max-h-[46px] max-[1000px]:text-sm border-white py-3 px-8 w-fit flex items-center gap-4 rounded-[55px] text-lg text-white font-medium bg-transparent "
             >
               Sign Up for Free

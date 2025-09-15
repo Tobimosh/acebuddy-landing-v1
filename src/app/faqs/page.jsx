@@ -53,79 +53,149 @@ const FAQPage = () => {
     {
       question: "What is AceBuddy?",
       answer:
-        "AceBuddy is your AI-powered exam prep companion — built to help you learn smarter and retain better. With tools like FOCUS TODAY (your adaptive daily study guide) and ACE CARDS (intelligent flashcards for retention), you'll move through your syllabus with focus, speed and confidence.",
+        "AceBuddy is an AI-powered exam productivity tool. It takes any official exam syllabus (like SAT, GRE, IELTS, CFA, PMP, etc.) and instantly breaks it into structured, bite-sized microsessions. Each session is designed to help you cover 100% of your syllabus efficiently and actually retain what you learn.",
+    },
+    {
+      question: "How does Acebuddy work?",
+      answer: (
+        <div>
+          <ol className="ml-5 space-y-2">
+            <li>1. You tell AceBuddy which exam you’re preparing for.</li>
+            <li>
+              2. Our AI agent <b>ANT6</b> maps your exam syllabus into small
+              learning units.
+            </li>
+            <li>
+              3. Each unit includes:
+              <ul className="list-disc ml-5 space-y-2 list-inside mt-2">
+                <li>
+                  <b>Highlights</b> (for quick grasp)
+                </li>
+                <li>
+                  <b>Video recommendations</b> (short, focused tutorials)
+                </li>
+                <li>
+                  <b>Textbook-style explanations</b> (clear, exam-level content)
+                </li>
+                <li>
+                  Built-in <b>Spaced Retrieval practice</b> to test yourself.
+                </li>
+              </ul>
+            </li>
+            <li>
+              4. You study in short sessions → build mastery faster → no
+              cramming, no burnout.
+            </li>
+          </ol>
+        </div>
+      ),
     },
     {
       question: "Who is AceBuddy for?",
       answer:
-        "AceBuddy is designed for high-stakes test takers; whether you're prepping for medical school, law school, a professional certification, or a national exam. If your future depends on passing, we've got your back.",
+        "AceBuddy is built for high-stakes exam takers — students, professionals, or anyone preparing for competitive, certification, or language exams. If your exam has a syllabus, AceBuddy can help you master it.",
     },
     {
-      question: "What types of exams does AceBuddy support?",
+      question: "What makes AceBuddy different from youtube or prep courses?",
       answer: (
         <div>
-          <p className="mb-3">We support a range of exams, including:</p>
-          <ul className="space-y-2 pl-4">
-            <li>• College entrance exams (SAT, ACT, JEE, etc.)</li>
-            <li>• Graduate admissions (MCAT, LSAT, GRE, GMAT, etc.)</li>
+          <p>
+            You'd be studying conveniently at your own pace, without judgement.
+          </p>
+          <ul className="list-disc ml-5 space-y-2 list-inside mt-2">
             <li>
-              • Professional certifications/Licensure exams (USMLE, PMP, CFA,
-              NCLEX, etc.)
+              You don’t waste time searching for the right videos or books —
+              AceBuddy uses your exact syllabus.
             </li>
-            <li>• National high school exams (WASSCE, A-Levels, CBSE, etc.)</li>
-            <li>• Language proficiency tests (IELTS, TOEFL, HSK, etc.)</li>
+            <li>No irrelevant content, no “over-studying.”</li>
+            <li>
+              Each session is optimized for <strong>focus and retention</strong>{" "}
+              (not endless lectures).
+            </li>
+            <li>
+              Everything is personalized and structured to get you exam-ready on
+              time.
+            </li>
           </ul>
         </div>
       ),
     },
     {
-      question: "What devices is AceBuddy available on?",
-      answer: "AceBuddy is currently available via web app on desktop.",
+      question: "Can I really finish my syllabus in time?",
+      answer:
+        "Yes. AceBuddy calculates your exam’s total sessions and even shows you how long it’ll take you to finish them based on your pace. This helps you stay on track, avoid procrastination, and know exactly what’s left.",
     },
     {
-      question: "Is AceBuddy free?",
+      question: "Does AceBuddy work offline?",
       answer:
-        "While all features are free during beta, our FOCUS TODAY guided learning feature will remain free afterward. After beta, our ACE CARDS flashcards will be available in two ways: Build your own sets for free, or purchase expertly crafted sets from contributors in-app.",
+        "Currently, you’ll need internet access. Stay tuned for offline study packs in the future.",
+    },
+    {
+      question: "What Exams are supported?",
+      answer:
+        "AceBuddy works with all exams that publish a syllabus — from school exams to professional certifications. Popular examples include: SAT, GRE, GMAT, IELTS, CFA, PMP, Medical/Board exams, and more",
+    },
+    {
+      question: "How much does it cost?",
+      answer:
+        "We’re currently in private beta. Early users get free access. Once launched, pricing will be simple and affordable.",
+    },
+    {
+      question: "How is this different from flashcards or question banks?",
+      answer: (
+        <div>
+          <ul className="list-disc ml-5 space-y-2 list-inside mt-2">
+            <li>Flashcards = recall only(mostly without spaced repetition).</li>
+            <li>Question banks = practice only.</li>
+            <li>
+              AceBuddy = the full prep cycle →{" "}
+              <b>learn, understand, recall, and master</b> your syllabus.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      question: "Who built AceBuddy?",
+      answer:
+        "AceBuddy is built by exam-takers who know the pain of failing because of time and retention. Our team turned that frustration into ANT6, the AI agent that helps you master syllabi smarter, not harder.",
+    },
+    {
+      question: "Is my data safe?",
+      answer:
+        " Yes. Your study data is private and only used to improve your learning experience. We do not share or sell your exam prep activity.",
     },
     {
       question: "Can I earn with AceBuddy?",
-      answer:
-        "Absolutely. Join our Contributor Program to share your high-quality study notes or flashcards and earn recurring income as others use them.",
-    },
-    {
-      question: "Can organizations or academic institutions use AceBuddy?",
-      answer:
-        "Yes. If you're from a school, bootcamp, or education provider looking to empower your learners, email us at partner@acebuddy.so",
-    },
-    {
-      question: "How does AceBuddy know what to teach me?",
-      answer:
-        "AceBuddy prompts you during onboarding to choose your exam, select your preferred study resources, and share your exam date. Then, our system generates a personalized plan based on your exam syllabus broken into bite-sized sessions based on your syllabus and timeline.",
-    },
-    {
-      question: "What's included in a FOCUS TODAY session?",
-      answer:
-        "Each session is a short, focused burst of learning, structured as free mapped video tutorials and textbooks sections. You can do as many sessions per day as you like — we track your progress in real-time.",
-    },
-    {
-      question: "I found a bug or have feedback. What should I do?",
-      answer:
-        "We love feedback. Use the in-app bug flag, thumbs-up/down menu, or email us at support@acebuddy.so",
-    },
-    {
-      question: "How do I join the beta?",
       answer: (
         <div>
           <p className="mb-3">
-            We're currently onboarding early testers. If you are interested,
-            please fill the signup form and we'll reach out to you shortly.
+            Absolutely. Join our Contributor Pilot Program to learn more about
+            how you can earn recurring income with AceBuddy.
           </p>
           <Link
             href="https://forms.fillout.com/t/9QDQgUUtsSus"
-            className="text-[#000075] hover:underline"
+            className="text-[#fff] hover:underline"
           >
-            → Join Beta Waitlist
+            → Sign up to learn more
           </Link>
+        </div>
+      ),
+    },
+    {
+      question: "Can organizations or academic institutions use AceBuddy?",
+      answer: (
+        <div>
+          <p className="mb-3">
+            Yes. If you’re from a school, bootcamp, or education provider
+            looking to empower your learners, email us at
+          </p>
+          <a
+            href="mailto:partner@acebuddy.so"
+            className="text-[#fff] hover:underline"
+          >
+            📩 partner@acebuddy.so
+          </a>
         </div>
       ),
     },

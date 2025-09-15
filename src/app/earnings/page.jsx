@@ -119,12 +119,12 @@ const EarnPage = () => {
             Earn with AceBuddy
           </h1>
           <p className="font-inter text-lg text-[#909DAC] max-w-2xl mx-auto max-[768px]:text-base">
-            Turn Your Study Notes into Passive Income
+            Turn Your Study Experience into Passive Income
           </p>
         </div>
 
         {/* Mission statement */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <div className="bg-[rgba(0,0,117,0.05)] border border-[rgba(236,236,236,0.1)] rounded-2xl p-8 text-center max-[768px]:p-6">
             <p className="font-inter text-[#909DAC] text-lg leading-relaxed mb-4 max-[768px]:text-base">
               At AceBuddy, we believe great notes shouldn't stay hidden in your
@@ -133,10 +133,10 @@ const EarnPage = () => {
               <em>and</em> earn you recurring income.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* What is the program */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
             What is the Contributor Program?
           </h2>
@@ -160,52 +160,50 @@ const EarnPage = () => {
               <FeatureCard key={index} {...benefit} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* What you'll contribute */}
         <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
-            What You'll Contribute
+            Introducing the Pilot Contributor Program
           </h2>
-          <div className="bg-[rgba(0,0,117,0.05)] border border-[rgba(236,236,236,0.1)] rounded-2xl p-8 max-[768px]:p-6">
+          <div className="bg-[rgba(0,0,117,0.05)] mb-14 border border-[rgba(236,236,236,0.1)] rounded-2xl p-8 max-[768px]:p-6">
             <p className="font-inter text-[#909DAC] mb-6 max-[768px]:text-sm">
-              You'll be crafting:
+              We’re opening a limited Pilot Contributor Program to onboard our
+              first wave of trusted contributors.
             </p>
-            <ul className="space-y-3 mb-8">
+            <p className="font-inter text-[#909DAC] mb-6 max-[768px]:text-sm">
+              As a pilot contributor, you will:
+            </p>
+            <ul className="space-y-3 list-disc ml-5 list-inside mb-8">
               <li className="font-inter text-[#909DAC] flex items-start max-[768px]:text-sm">
-                <span className="text-green-400 mr-3 mt-1">✅</span>
-                <span>
-                  <strong className="text-[#ECECEC]">ACE CARDS decks</strong> —
-                  high-quality, syllabus-aligned flashcards designed for spaced
-                  repetition
-                </span>
+                Share your insights and provide feedback that shapes AceBuddy.
               </li>
               <li className="font-inter text-[#909DAC] flex items-start max-[768px]:text-sm">
-                <span className="text-green-400 mr-3 mt-1">✅</span>
-                <span>Based on exams you've taken or mastered</span>
+                Gain early visibility for your contributions.
+              </li>
+              <li className="font-inter text-[#909DAC] flex items-start max-[768px]:text-sm">
+                Be among the first to explore monetization opportunities on the
+                platform.
               </li>
             </ul>
             <p className="font-inter text-[#909DAC] mb-4 max-[768px]:text-sm">
-              <strong className="text-[#ECECEC]">
-                For learners preparing for:
-              </strong>
+              <strong className="text-[#ECECEC]">Eligibility: </strong>
+              You must already be a beta user to apply.
             </p>
-            <ul className="space-y-2">
-              {examTypes.map((exam, index) => (
-                <li
-                  key={index}
-                  className="font-inter text-[#909DAC] flex items-start max-[768px]:text-sm"
-                >
-                  <span className="text-[#000075] mr-3 mt-1">•</span>
-                  <span>{exam}</span>
-                </li>
-              ))}
-            </ul>
           </div>
+          <p>
+            {" "}
+            <p>
+              Got questions? Reach us at{" "}
+              <Link href="mailto:contributors@acebuddy.so" className="text-[#fff] hover:underline font-semibold transition-all duration-300">
+                contributors@acebuddy.so
+              </Link>
+            </p>
+          </p>
         </div>
 
-        {/* How it works */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
             How It Works
           </h2>
@@ -214,10 +212,10 @@ const EarnPage = () => {
               <StepCard key={index} {...step} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Earnings section */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
             Earnings & Recognition
           </h2>
@@ -268,10 +266,10 @@ const EarnPage = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Quality standards */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
             Quality Standards & Review
           </h2>
@@ -307,10 +305,10 @@ const EarnPage = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* Who can apply */}
-        <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-16 max-[768px]:mb-12">
           <h2 className="font-montserrat text-3xl font-medium text-[#ECECEC] mb-8 text-center max-[768px]:text-2xl max-[768px]:mb-6">
             Who Can Apply?
           </h2>
@@ -333,10 +331,10 @@ const EarnPage = () => {
               No degree required. Just a sharp mind and valuable content.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Pilot program CTA */}
-        <div className="max-w-4xl mx-auto text-center">
+        {/* <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-r from-[rgba(0,0,117,0.1)] to-[rgba(0,0,160,0.1)] border border-[rgba(236,236,236,0.2)] rounded-2xl p-8 max-[768px]:p-6">
             <h2 className="font-montserrat text-2xl font-semibold text-[#ECECEC] mb-4 max-[768px]:text-xl">
               Pilot Program Is Now Open
@@ -376,7 +374,7 @@ const EarnPage = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

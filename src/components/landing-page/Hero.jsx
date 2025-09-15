@@ -37,7 +37,7 @@ const Hero = () => {
               What exam are you prepping for?
             </h1>
             <p className="font-inter text-lg text-center text-[#909DAC] font-normal max-[915px]:text-base max-[564px]:w-[90%]">
-              Instantly get an AI-powered study plan based on your exact
+              Instantly get AI-powered focused sessions based on your exact
               syllabus
             </p>
           </div>
@@ -48,7 +48,7 @@ const Hero = () => {
               placeholder="Enter your exam"
               className="flex-1 pl-[15px] text-[#ECECEC] bg-transparent outline-none placeholder:text-[#ECECEC] font-inter text-[15px] max-[915px]:text-sm max-[915px]:placeholder:text-sm  font-normal"
             />
-            <Link href={"https://forms.fillout.com/t/9QDQgUUtsSus"}>
+            <Link target="_blank" href={"https://app.acebuddy.so/invite-code"}>
               <Icon.ExamButton />
             </Link>
           </div>

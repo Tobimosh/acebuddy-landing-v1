@@ -12,7 +12,7 @@ const Footer = () => {
               ...your
             </p>
             <Icon.Logo className="mt-[10px]" />
-            <div className="flex items-center gap-2 mt-9 max-[462px]:flex-col max-[462px]:items-start">
+            {/* <div className="flex items-center gap-2 mt-9 max-[462px]:flex-col max-[462px]:items-start">
               <input
                 type="email"
                 placeholder="Email address"
@@ -21,7 +21,7 @@ const Footer = () => {
               <button className="font-inter text-base font-medium text-[rgba(11,8,28,0.8)] w-[123px] h-[55px] py-4 px-6 bg-white rounded-[60px]">
                 Subscribe
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col gap-6 ">
             <p className="text-base font-normal text-[#ECECEC]">Company</p>
@@ -50,17 +50,17 @@ const Footer = () => {
                   Earn With AceBuddy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="text-base font-medium text-[#909DAC]"
                   href={"/"}
                 >
                   Blog
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
-          <div className="flex flex-col gap-6">
+          {/* <div className="flex flex-col gap-6">
             <p className="text-base font-normal text-[#ECECEC]">Products</p>
             <ul className="flex flex-col gap-4">
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-6">
             <p className="text-base font-normal text-[#ECECEC]">Contact Us</p>
             <ul className="flex flex-col gap-4">
