@@ -201,7 +201,14 @@ const CareersPage = () => {
             </div>
           </div>
           <p className="text-sm text-center mt-6">
-            👉 Follow us on <Link href="https://www.linkedin.com/company/acebuddy" className="text-[#fff] text-center mt-6 hover:underline font-semibold transition-all duration-300">LinkedIn</Link> to see open positions as they’re announced.
+            👉 Follow us on{" "}
+            <Link
+              href="https://www.linkedin.com/company/acebuddy-inc/"
+              className="text-[#fff] text-center mt-6 hover:underline font-semibold transition-all duration-300"
+            >
+              LinkedIn
+            </Link>{" "}
+            to see open positions as they’re announced.
           </p>
         </div>
 
